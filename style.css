@@ -1,0 +1,403 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Poppins&family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+body {
+    background-color: #fec305;
+    color: rgb(108, 108, 108);
+    font-family: 'Josefin Sans', sans-serif;
+}
+#navbar {
+    background-color: #000000;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    position: sticky;
+    top: 0;
+    
+}
+.main {
+    padding: 10px 10%;
+}
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+.logo {
+    color: antiquewhite;
+    font-size: 3rem;
+    padding:10px 0 ;
+    cursor: pointer;
+}
+#navbar span {
+    color: #fec305;
+}
+span {
+    color: antiquewhite;
+}
+.menu li{
+    display: inline-block;
+    list-style-type: none;
+    padding: 0 20px;
+}
+.menu li a{
+    color: antiquewhite ;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.1rem;
+    position: relative;
+}
+.menu li a::after{
+    content: '';
+    width: 0;
+    height: 3px;
+    background: #fec305;
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: 0.5s;
+}
+
+.menu li a:hover::after{
+    width: 100%;
+    
+}
+#home{
+    display: flex;
+    justify-content: space-between;
+    
+}
+.cover {
+    flex-basis: 50%;
+}
+.cover img{
+    padding-top: 20px;
+    height: 100%;
+    width: 100%;
+}
+.content {
+    display: block;
+    padding: 20% 10% 0 20%;
+}
+.content h1{
+    color:rgb(0, 0, 0);
+    margin: 10px 0px 10px 0px;
+    font-size: 4.7rem;
+}
+.content h3 {
+   color: rgb(2, 2, 2);
+   font-size: 1.875rem; 
+}
+.content h4 {
+    padding-top: 20px;
+    font-size: 1.2rem;
+}
+.content h4 a {
+    text-decoration: none;
+    color: antiquewhite;
+    letter-spacing: 2px;
+    font-size: 1.125rem ;
+    cursor: pointer;
+}
+#about {
+    padding: 180px 0 180px 250px;
+}
+.row {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.col1 {
+    flex-basis: 35%;
+}
+.col1 img{
+    height: 90%;
+    width: 100%;
+}
+.col2 {
+    flex-basis: 60%;
+    
+}
+.col2 h2{
+    color: #000000;
+    font-size: 4rem;
+    padding: 50px 0 10px 0;
+}
+.col2 p{
+    font-size: 1.2rem;
+    width: 550px;
+    padding-top: 10px;
+    
+}
+.services {
+    padding-bottom: 190px;
+}
+.sub-title {
+    font-size: 60px;
+    font-weight: 600;
+    color: black;
+}
+.services-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 40px;
+    margin-top: 50px;
+}
+
+.services-list div{
+    background: black;
+    color: white;
+    padding: 40px;
+    font-size: 13px;
+    font-weight: 300;
+    border-radius: 10px;
+    transition: background 0.5s, transform 0.5s;
+}
+.services-list div img {
+    margin-bottom: 30px;
+    height: 20vh;
+}
+.services-list div h2 {
+    font-size: 30px;
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+
+.services-list div a {
+    text-decoration: none;
+    color: #fec305;
+    font-size: 12px;
+    margin-top: 20px;
+    display: inline-block;
+}
+.services-list div:hover {
+    background: #ae8600;
+    transform: translateY(-10px);
+}
+/*----------------------------Contact Us Page --------------------------------------*/
+#contact{
+    padding-top: 150px;
+}
+.contact-left{
+    flex-basis: 35%;
+}
+.contact-right{
+    flex-basis: 60%;
+}
+.contact-left p{
+    margin-top: 30px;
+    font-size: 18px;
+}
+.btn{
+    display: inline-block;
+    margin: 50px auto;
+    width: fit-content;
+    border: 1px solid black;
+    padding: 14px 50px;
+    border-radius: 6px;
+    background: black;
+    color: antiquewhite;
+    text-decoration: none;
+}
+.btn:hover{
+    background: #ae8600;
+    color: #000000;
+}
+.contact-right form {
+    width: 100%;
+}
+form input, form textarea {
+    width: 100%;
+    border: 0;
+    outline: none;
+    background: #262626;
+    padding: 15px;
+    margin: 15px 0;
+    color: #fec305;
+    font-size: 18px;
+    border-radius: 6px;
+}
+form .btn {
+    pad: 14px 60px;
+    font-size: 18px;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+.list-form form input{
+    background: antiquewhite;
+    color: black;
+    width: 50%;
+}
+
+
+/*-----------------------------------------------Find Parking-----------------------------------------------------*/
+.location , .parking-spot{
+    padding: 50px 0;
+}
+.location .container2 a, .parking-spot .container2 a{
+    text-decoration: none;
+}
+.location .container2 a div h2{
+    font-size: 1.56rem;
+}
+.parking-spot .container2 .services-list div:hover {
+    background: #000000;
+    transform: translateY(-10px);
+}
+/*-----------------------------------------footer-----------------------------------------*/
+.footer {
+    color: #76b3f5;
+    background-color: black;
+    position: relative;
+    width: 100%;
+    padding: 10px 0 10px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/*------------------------------------------LOG IN----------------------------------------------*/
+.admin {
+    flex-basis: 35%;
+}
+.user{
+    flex-basis: 60%;
+}
+/*-------------------------------------------Admin Panel----------------------------------------*/
+.welcome h1 {
+    color: #000000;
+    text-align: center;
+    font-size: 3rem;
+    text-decoration: underline;
+    font-family: 'Roboto', sans-serif;
+    
+}
+.menu li button {
+    background-color: black;
+    color: antiquewhite;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.1rem;
+    position: relative;
+    cursor: pointer;
+}
+
+.menu li button::after{
+    content: '';
+    width: 0;
+    height: 3px;
+    background: #fec305;
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: 0.5s;
+}
+
+.menu li button:hover::after{
+    width: 100%;
+    
+}
+
+
+
+/*-------------------------------------------Phone---------------------------------------------*/
+@media only screen and (max-width: 1160px) {
+    .box {
+        margin: 0px -50px;
+    }
+    .cover img{
+        height: 100%;
+        width: 150%;
+    }
+    .services-list div img {
+        height: 30vh;
+    }
+}
+@media only screen and (max-width: 1000px) {
+    .cover img{
+        height: 50vh;
+        width: 40vh;
+    }
+}
+@media only screen and (max-width: 900px) {
+    .services-list div img {
+        height: 20vh;
+    }
+    .menu {
+        display: none;
+    }
+    #navbar {
+        position: relative;
+        margin: auto;
+    }
+    
+    .logo {
+        position: relative;
+        margin: auto;
+    
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    
+    .cover img {
+        display: none;
+    }
+    .content {
+        width: auto;
+        padding: 150px 0px 450px 10px;
+    }
+    #about {
+        padding: 80px 108px ;
+    }
+    .col1 img{
+        height: auto;
+        width: 360px;
+    }
+    .col2 p{
+        width: 340px;
+        
+    }
+    
+}
+@media only screen and (max-width: 500px){
+    
+    #about {
+        padding: 80px 90px ;
+    }
+    
+    .content {
+        width: auto;
+        padding: 150px 0px 350px 10px;
+    }
+    .col2 h2 {
+        margin-right: 10px;
+    }
+   
+
+}
+@media only screen and (max-width: 460px){
+    #about {
+        padding: 80px 50px ;
+    }
+}
+@media only screen and (max-width: 400px){
+    #about {
+        padding: 80px 20px ;
+    }
+    #about img{
+    height: 100%;
+    width: 200%;
+    }
+}
+
+/*-------------------------------------------------End-----------------------------------------------*/
